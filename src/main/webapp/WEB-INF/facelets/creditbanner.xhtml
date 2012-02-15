@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+<body>
+
+This text above will not be displayed.
+
+<ui:component>
+    <div xmlns:ui="http://java.sun.com/jsf/facelets"
+         xmlns:h="http://java.sun.com/jsf/html">
+        <h:panelGrid id="creditgrid_#{id}" columns="3">
+            <h:commandButton action="#{visaBean[visaAction]}" image="/images/visa.jpg"/>
+            <h:commandButton action="#{masterCardBean[masterCardAction]}" image="/images/mastercard.jpg"/>
+            <h:commandButton action="#{amexBean[amexAction]}" image="/images/amex.jpg"/>
+        </h:panelGrid>
+    </div>
+</ui:component>
+</body>
+</html>
